@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+
+{% if not book %}
+<h1>NO BOOK FOUND :(</h1>
+{% else %}
+<h1>FOUND BOOK! <a href="{{book.url}}">{{book.md5sum}}</a>
+
+Redirecting to <a href="{{book.url}}">{{book.url}}</a>...
+{% endif %}
+
+{% endblock %}
