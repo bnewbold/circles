@@ -1,8 +1,20 @@
 {% extends "base.html" %}
+{% block style %}
+body { background-color: black; }
+{% endblock %}
 {% block body %}
 
 <a href="book" target="_blank">
 <img src="/static/aaaarg_vs_libgen.png" ismap="ismap">
 </a>
+
+<div style="position: absolute; top: 10px; left: 10px;">
+<strong style="font-size: large;">
+<span style="color: red;">AAAAARG.ORG</span>
+<br><span style="color: blue;">LIBGEN.ORG</span>
+<br><a href="http://git.bnewbold.net/?p=circles.git;a=summary" style="color:white;">{code}</a> 
+<a href="http://2012.haip.cc" style="color:white;">{haip}</a>
+</strong>
+</div>
 
 {% endblock %}
