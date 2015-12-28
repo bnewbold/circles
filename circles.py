@@ -43,10 +43,10 @@ def aaaaarg_direct_url(md5sum):
     while len(idnum) < 6:
         idnum = '0' + idnum
     print idnum
-    return "http://books.2012.haip.cc.kiberpipa.net/datastore/books/marcell/aaarg/data/%s/%s.pdf" % (idnum[:3], idnum)
+    return "http://aaaaarg.fail/search?query=%s" % md5sum.lower()
 
 def libgen_direct_url(md5sum):
-    return "http://libgen.org/get?nametype=md5&md5=%s" % md5sum
+    return "http://libgen.io/get_new.php?md5=%s&open=2" % md5sum
 
 def closest_md5(key, l):
     """Takes a hash and a sorted list of hashes, tries to return the closest 
