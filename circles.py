@@ -46,7 +46,7 @@ def aaaaarg_direct_url(md5sum):
     return "http://aaaaarg.fail/search?query=%s" % md5sum.lower()
 
 def libgen_direct_url(md5sum):
-    return "http://libgen.io/get_new.php?md5=%s&open=2" % md5sum
+    return "http://gen.lib.rus.ec/search.php?req=%s&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=md5" % md5sum
 
 def closest_md5(key, l):
     """Takes a hash and a sorted list of hashes, tries to return the closest 
